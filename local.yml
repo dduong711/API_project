@@ -18,6 +18,9 @@ services:
     env_file:
       - ./.envs/.local/.django
       - ./.envs/.local/.postgres
+    environment:
+      - DJANGO_READ_DOT_ENV_FILE=True
+      - DATABASE_URL=postgres://postgres:debug@localhost:5432/mysite
     ports:
       - "8000:8000"
     command: /start

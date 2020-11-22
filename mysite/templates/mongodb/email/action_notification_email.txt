@@ -1,0 +1,5 @@
+Detail:
+	- At: {{ time }}
+	- URL: {{ url }}
+	- Method: {{ method }}
+	- Data: {{ data|safe }}
